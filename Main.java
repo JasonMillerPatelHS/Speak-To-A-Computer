@@ -66,14 +66,40 @@ class Main {
         System.out.println("Good, I was not going to spend a year making a game.");
         System.out.println("Now wait here, I am sure something will happen...");
   
-        for (int e = 0; e <= 5; e++) 
+        for (int e = 50; e <= 100; e = e + 10) 
             {
-              System.out.println("Boring Detected: Boring Mode loading...");
+              System.out.println("Boring Detected: Boring Mode loading... " + e + "%");
             }
         System.out.println("Fine day isn't it? What is your name?");
         userName = scan.next(); 
         System.out.println(userName + " what a nice name...");
-
+        System.out.println("How old are you?");
+        int userAge = scan.nextInt(); 
+    
+        if (userAge > 15)
+        {
+          System.out.println(userAge + "... you are ancient.");
+        }
+        else
+        {
+          System.out.println(userAge + " ahhh I remember my youth.");
+        }
+        System.out.println("How is school? (good or bad)");
+        String schoolLife = scan.next();
+        System.out.println("How is life? (good or bad)");
+        String lifeLife = scan.next();
+        if (lifeLife.equals("bad") && schoolLife.equals("bad"))
+        {
+          System.out.println("That is awful...");
+        }
+        else if (lifeLife.equals("bad") || schoolLife.equals("bad"))
+        {
+          System.out.println("That sucks...");
+        }
+        else if (lifeLife.equals("good") && schoolLife.equals("good"))
+        {
+          System.out.println("Wow you have a good life then...");
+        }
       }
       System.out.println("Discussion is over, run again for more options!");
       scan.close(); //stops scanning
