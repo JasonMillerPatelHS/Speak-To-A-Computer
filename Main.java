@@ -13,7 +13,7 @@ class Main {
 
       String response = scan.next(); // Shortens scan.next() to be just response
 
-      if (response.equals("yes")) 
+      if (response.equals("yes"))  // user wants to play a game
       {
 
         System.out.println("Well too bad.");
@@ -22,22 +22,19 @@ class Main {
       
         response = scan.next(); // Redefines the response to allow a new imput from next line 
 
-        if (response.equals("yes"))
+        if (response.equals("yes")) // user wants to play the counting game
         {
           int x = 0;
           while (x <= 4)
           {
-
             x++;
-
             System.out.println(x);
-
           }
 
           System.out.println("Was that fun? (yes or no)");
           
           response = scan.next();
-          if (response.equals("yes"))
+          if (response.equals("yes")) //user found it fun
           {
             System.out.println("Then you will like the for loop number game, it is very thrilling...");
             for (x = 0; x <= 5; x++) 
@@ -50,10 +47,10 @@ class Main {
             System.out.println("What do you mean they are the same thing?!?");
 
           }
-
+        
         }
       
-        else if (response.equals("no")) 
+        else if (response.equals("no")) // If user put no then: user does not want a game:
         {
           System.out.println("Okay then your loss...");
           System.out.println("Since you are not in the mood for games, then you can just sit here in silence!");
@@ -101,7 +98,7 @@ class Main {
           System.out.println("Wow you have a good life then...");
         }
       }
-      System.out.println("Discussion is over, run again for more options!");
+      System.out.println("This discussion is over, run again for more options!");
       scan.close(); //stops scanning
   } 
 }
