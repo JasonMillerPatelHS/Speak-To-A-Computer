@@ -5,6 +5,8 @@ class Main {
     public static void main(String[] args) {
     
       Scanner scan = new Scanner(System.in);
+
+      String userName = "undifined";
     
       System.out.println("Hello user I am a computer!");
       System.out.println("Would you like to play a game? (yes or no)");
@@ -63,6 +65,15 @@ class Main {
 
         System.out.println("Good, I was not going to spend a year making a game.");
         System.out.println("Now wait here, I am sure something will happen...");
+  
+        for (int e = 0; e <= 5; e++) 
+            {
+              System.out.println("Boring Detected: Boring Mode loading...");
+            }
+        System.out.println("Fine day isn't it? What is your name?");
+        userName = scan.next(); 
+        System.out.println(userName + " what a nice name...");
+
       }
       System.out.println("Discussion is over, run again for more options!");
       scan.close(); //stops scanning
