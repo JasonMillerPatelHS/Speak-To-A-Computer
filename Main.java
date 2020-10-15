@@ -77,7 +77,7 @@ class Main {
       {
         System.out.println("Boring Detected: Boring Mode loading... " + e + "%");
       }
-      System.out.println("Fine day isn't it? What is your name?");
+      System.out.println("Fine day isn't it? What is your name? (Ex: Jason)");
       userName = scan.next(); 
       System.out.println(userName + " what a nice name...");
       System.out.println("How old are you?");
@@ -108,7 +108,7 @@ class Main {
         System.out.println("Wow you have a good life then...");
       }
       double programmingGrade; 
-      System.out.println("What is your grade in programming?");
+      System.out.println("What is your grade in programming? (ex: 95.9 or 0.00)");
       programmingGrade = scan.nextDouble(); // scans for double (the user's grade)
       if(programmingGrade >= 90.00) 
       {
