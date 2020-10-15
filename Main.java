@@ -2,7 +2,8 @@ import java.util.Scanner; // imports the scanner
 
 class Main {
   //.I added this extra line in case I needed to add a new class but we did not and now this is left here 
-  public static void main(String[] args) {
+  public static void main(String[] args) 
+  {
     
     Scanner scan = new Scanner(System.in);
 
@@ -15,7 +16,6 @@ class Main {
 
     if (response.equals("yes"))  // user wants to play a game
     {
-
       System.out.println("Well too bad.");
       System.out.println("It appears you expected more from this choice...");
       System.out.println("Oh... I know a game! The counting game! Would you like to play? (yes or no)");
@@ -56,9 +56,7 @@ class Main {
           {
             System.out.println("Good guess! But, the answer was 5!");
           }
-
-        }
-        
+        } 
       }
       
       else if (response.equals("no")) // If user put no then: user does not want a game:
@@ -123,7 +121,7 @@ class Main {
         System.out.println("I guess you could use some work!");
       }
     }
-    System.out.println("This discussion is over, run again for more options! Goodbye.");
+    System.out.println("This discussion is over, run again to get other endings/playthroughs! Goodbye.");
     scan.close(); //stops scanning 
   } 
 }
