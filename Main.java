@@ -45,6 +45,8 @@ class Main {
             System.out.println("What do you mean nothing changed? There is now a 0!");
             System.out.println("I even made it a for loop, the other one was a while loop!");
             System.out.println("What do you mean they are the same thing?!?");
+            System.out.println("I have a new game idea... guess my number!");
+            
 
           }
         
@@ -71,7 +73,7 @@ class Main {
         userName = scan.next(); 
         System.out.println(userName + " what a nice name...");
         System.out.println("How old are you?");
-        int userAge = scan.nextInt(); 
+        int userAge = scan.nextInt(); // Scans for int
     
         if (userAge > 15)
         {
@@ -97,6 +99,22 @@ class Main {
         {
           System.out.println("Wow you have a good life then...");
         }
+        double programmingGrade; 
+        System.out.println("What is your grade in programming?");
+        programmingGrade = scan.nextDouble(); // scans for double
+        if(programmingGrade >= 90.00) 
+        {
+          System.out.println("Wow an A programmer, I bet you could even code me!");
+        }
+        else if (programmingGrade >= 71)
+        {
+          System.out.println("I guess you are ok at coding!");
+        }
+        else if (programmingGrade <= 70)
+        {
+          System.out.println("I guess you could use some work!");
+        }
+
       }
       System.out.println("This discussion is over, run again for more options!");
       scan.close(); //stops scanning
