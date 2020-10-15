@@ -45,8 +45,17 @@ class Main {
             System.out.println("What do you mean nothing changed? There is now a 0!");
             System.out.println("I even made it a for loop, the other one was a while loop!");
             System.out.println("What do you mean they are the same thing?!?");
-            System.out.println("I have a new game idea... guess my number!");
-            
+            System.out.println("I have a new game idea... guess my number! (input a number between 1-10)");
+
+            int guessNumber = scan.nextInt();
+            if (guessNumber == 5)
+            {
+              System.out.println("Good job, you guessed correctly the answer is 5!");
+            }
+            else if (guessNumber != 5)
+            {
+              System.out.println("Good guess! But, the answer was 5!");
+            }
 
           }
         
@@ -116,7 +125,7 @@ class Main {
         }
 
       }
-      System.out.println("This discussion is over, run again for more options!");
+      System.out.println("This discussion is over, run again for more options! Goodbye.");
       scan.close(); //stops scanning
   } 
 }
